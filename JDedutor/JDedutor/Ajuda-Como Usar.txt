@@ -1,0 +1,50 @@
+1) Inicialmente, crie um arquivo e salve-o como "arquivo-01.txt"; 
+	(Nome sugestivo. Escolha o nome que desejar.)
+
+2) preencha o arquivo com as regras abaixo:
+A 
+B
+B -> (A v C) -> C
+
+3) salve o arquivo.
+
+4) Abra o TCC.jar (dê um nome para seu programa, mude esse TCC), pressione "Selecionar" e escolha o arquivo "arquivo.txt".
+
+5) Clique em "Selecionar" e navegue até o arquivo desejado. O texto referente no arquivo aparecerá no campo "Código" do lado esquerdo da tela. Caso não apareça, informe ao professor. 
+
+6) Clique em executar.
+
+Mais 4 exemplos estão anexados nesta pasta caso deseje observar melhor o funcionamento desde sedutor.
+
+Pronto! A possível conclusão deverá ser exibida na parte inferior; e do lado direito no campo "Regras", as mesmas identificadas deverão ser reportadas.
+
+
+Agora crie seu arquivo com suas regras, seguindo as seguintes regras:
+
+
+	No arquivo a ser lido:
+a.	Substitua → por ->  
+b.	Substitua o símbolo ∧ por  ^ (Acento Circunflexo)
+c.	Substitua o símbolo ∨  por v (Letra “v“ minúscula)
+d.	Use APENAS letras maiúsculas
+
+	Premissas:
+a.	 Cada premissa deve ser posicionada em uma linha. Caso você informe regras numa mesma linha separadas por vírgulas, o programa irá acusar um erro, pois a vírgula não é reconhecida neste compilador.
+b.	Procure colocar premissas simples em cada linha. Premissas simples colaboram para que a dedução seja mais certeira. 
+c.	 O cursor deverá estar posicionado depois do último caractere digitado no código. Caso haja espaçamentos no ultimo caractere digitado no código, erros serão reportados. 
+d.	Evite:
+i.	Parênteses desnecessários.
+ii.	Premissas compostas e que possuem parênteses sendo colocadas em uma mesma linha. 
+
+Por exemplo: 
+	
+A -> (B ^ C) v B v C -> A
+
+O parênteses pode causar erros caso haja a aplicação de Modus Ponens ou Tollens no decorrer da execução.
+
+
+
+>>>>>>	QUALQUER erro ou dúvida, por favor, anote e entregue ao professor. Todas observações são de extrema importância para o aprimoramento da ferramenta e futuras implementações. <<<<<<<<
+
+
+

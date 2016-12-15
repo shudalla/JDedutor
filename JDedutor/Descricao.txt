@@ -1,0 +1,64 @@
+- Pacote/Classes implementadas: 
+
+Collections:
+	- TipoToken : objeto que irá armazenar o nome, o tipo, e a linha do token lido pelo analisador lexico. Em sequida, um array de tokens será criado. 
+
+Imagem: 
+	Armazena o logo da UFES
+
+Persistencia:
+	Manipulação da tela principal do programa.
+	O arquivo txt "teste" encontrado nesta pasta será utilizado apenas nas partes de teste para o desenvolvimento do software
+
+Persistencia.Arquivo:
+	- Arquivo: realiza a gravação em um arquivo chamado "texto.txt " com o  código (regras) informadas pelo usuário. Realiza a leitura deste arquivo
+
+	- Texto.txt: armazena o texto informado pelo usuário 
+
+Persistencia.Command: 
+	- ICommand: interface a ser implementada pelos comandos.
+
+	- ExecutarCommand: da inicio a compilação das regras informadas.
+
+	- FecharCommand: fecha a tela principal.
+
+	- LimparCommand: limpa os campos de resposta e de código encotrados na tela principal
+
+Persistencia.Lexico:
+	- Lexer.flex: contém as regras para definição dos tokens
+
+	- Lexer.java: contém os automatos para reconhecimento da linguagem.
+
+	-Lexico: analisador lexico
+
+	-Token: classe enumerator que define tokens do tipo lexeme gerados pela classe lexer.java.
+
+Persistencia.Sintatico:
+	- Sintatico: faz a analise sintática
+
+	- Erro: define os erros possíveis que serão reconhecidos pelo analisador sintatico
+
+Persistencia.Semantico: 
+	- IRegra: Classe que será implementada pelas depois regras contendo métodos abastratos que serão implementados em suas filhas
+
+	- DuplaNegação: Implementa a regra de dupla negação
+
+	- ModusPonens: Implementa a regra Modus Ponens
+
+	- ModusTollens: Implementa a regra Modus Tollens
+
+	- Semantico: analise semantica do código
+
+Tela:
+	Tela: tela principal
+
+
+Manipular Código: 
+	- Na classe Arquivo do pacote Persistencia.Arquivo, encontra-se o endereço de onde o programa irá buscar o arquivo de leitura/gravação do código informado pelo usuário. Para alterar o mesmo, basta alterar a linha: 
+	- Caso professor necessitar escolher apenas 1 ou 2 regras específicas para compilar, basta entrar na classe "Semantico.java", no pacote Persistencia.Semantico, ir até o método "executarSemantico" e comentar uma das 3 linhas a seguir:
+
+	 		this.tokensTela =  dn.isRegra(tokens,this.regras); // DP: DUPLA NEGAÇÃO
+            this.tokensTela =  mp.isRegra(tokensTela, this.regras);  // MP: MODUS PONENS
+            this.tokensTela =  mt.isRegra(tokensTela,this.regras); //MT: MODUS TOLLENS
+
+    Cada linha é referente à uma regra, e as mesmas são inicializadas no início do método. 

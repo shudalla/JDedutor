@@ -1,0 +1,7 @@
+A ferramenta JDedutor foi elaborada para auxiliar na dedução lógica, sendo reconhecidas inicialmente 4 regras: Modus Ponens, Modus Tollens, Dupla Negação e a Simplificação.
+
+Você deve fornecer um arquivo contendo premissas para serem deduzidas. Ao encontrar uma das 4 regras citadas anteriormente, o dedutor exibirá a conclusão e o passo realizado para alcançá-la. . 
+
+Todas as regras reconhecidas serão exibidas no campo do lado direito do compilador denominado "Regras".
+A possível conclusão será exibida no campo inferior denominado "Conclusão".
+Caso deseja alterar o arquivo contendo as premissas, crie e selecione outro OU apenas altere o atual e selecione-o novamente.
